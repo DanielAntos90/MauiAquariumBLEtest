@@ -1,0 +1,17 @@
+﻿global using CommunityToolkit.Maui;
+global using CommunityToolkit.Maui.Alerts;
+global using CommunityToolkit.Maui.Core;
+global using CommunityToolkit.Mvvm.ComponentModel;
+global using CommunityToolkit.Mvvm.Input;
+//global using Microsoft.Maui.ApplicationModel;
+global using Plugin.BLE;
+global using Plugin.BLE.Abstractions;
+global using Plugin.BLE.Abstractions.Contracts;
+global using Plugin.BLE.Abstractions.EventArgs;
+global using System.Collections.ObjectModel;
+global using System.Diagnostics;
+global using IAdapter = Plugin.BLE.Abstractions.Contracts.IAdapter;
+global using MauiAquariumBLE.Models;
+//global using MauiAquariumBLE.Pages;
+global using MauiAquariumBLE.Services;
+global using MauiAquariumBLE.ViewModels;
