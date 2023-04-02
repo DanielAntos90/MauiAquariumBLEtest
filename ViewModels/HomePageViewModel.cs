@@ -1,4 +1,4 @@
-﻿using MauiAquariumBLE.Models;
+﻿using MauiAquariumBLE.View;
 namespace MauiAquariumBLE.ViewModels;
 
 public partial class HomePageViewModel : BaseViewModel
@@ -58,10 +58,10 @@ public partial class HomePageViewModel : BaseViewModel
         }
 
 #if ANDROID
-        PermissionStatus permissionStatus = await BluetoothLEService.CheckBluetoothPermissions();
+        PermissionStatus permissionStatus = await BluetoothService.CheckBluetoothPermissions();
         if (permissionStatus != PermissionStatus.Granted)
         {
-            permissionStatus = await BluetoothLEService.RequestBluetoothPermissions();
+            permissionStatus = await BluetoothService.RequestBluetoothPermissions();
             if (permissionStatus != PermissionStatus.Granted)
             {
                 await Shell.Current.DisplayAlert($"Bluetooth LE permissions", $"Bluetooth LE permissions are not granted.", "OK");

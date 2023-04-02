@@ -2,7 +2,7 @@
 using MauiAquariumBLE.Models;
 using System.Text;
 
-namespace MauiXAMLBluetoothLE.ViewModels;
+namespace MauiAquariumBLE.ViewModels;
 
 public partial class HeartRatePageViewModel : BaseViewModel
 {

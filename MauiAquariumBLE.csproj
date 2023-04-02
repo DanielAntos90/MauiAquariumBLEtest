@@ -53,7 +53,18 @@
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Maui.Dependencies" Version="6.0.552" />
+		<PackageReference Include="Microsoft.Maui.Extensions" Version="6.0.552" />
 		<PackageReference Include="Plugin.BLE" Version="3.0.0-beta.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="View\HeartRatePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
